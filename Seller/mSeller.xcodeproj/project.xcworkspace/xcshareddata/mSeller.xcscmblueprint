@@ -1,0 +1,45 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "99062c86-4ff0-4d2c-8ec3-9f06f05624ab++4065+++D946D29",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "99062c86-4ff0-4d2c-8ec3-9f06f05624ab+++24B841C" : {
+
+    },
+    "99062c86-4ff0-4d2c-8ec3-9f06f05624ab++4065+++D946D29" : {
+
+    },
+    "99062c86-4ff0-4d2c-8ec3-9f06f05624ab+++004282C" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "99062c86-4ff0-4d2c-8ec3-9f06f05624ab+++24B841C" : 0,
+    "99062c86-4ff0-4d2c-8ec3-9f06f05624ab++4065+++D946D29" : 0,
+    "99062c86-4ff0-4d2c-8ec3-9f06f05624ab+++004282C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B8BDF0FD-269C-4826-BE30-0562ABAC09EF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "99062c86-4ff0-4d2c-8ec3-9f06f05624ab+++24B841C" : "mseller\/",
+    "99062c86-4ff0-4d2c-8ec3-9f06f05624ab++4065+++D946D29" : "mseller\/mSeller\/mSeller\/mSeller.xcdatamodeld\/mSeller.xcdatamodel\/",
+    "99062c86-4ff0-4d2c-8ec3-9f06f05624ab+++004282C" : "mseller\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "mSeller",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "mSeller\/mSeller.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/iossvn.wclprod.com:18080\/svn\/mseller",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "99062c86-4ff0-4d2c-8ec3-9f06f05624ab+++004282C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/iossvn.wclprod.com:18080\/svn\/mseller",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "99062c86-4ff0-4d2c-8ec3-9f06f05624ab+++24B841C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/iossvn.wclprod.com:18080\/svn\/mseller",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "99062c86-4ff0-4d2c-8ec3-9f06f05624ab++4065+++D946D29"
+    }
+  ]
+}

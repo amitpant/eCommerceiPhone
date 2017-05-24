@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16A323" minimumToolsVersion="Xcode 4.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="BAR" syncable="YES">
+        <attribute name="barcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productcode" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="product" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PROD" syncable="YES"/>
+    </entity>
+    <entity name="CALLLOGS" syncable="YES">
+        <attribute name="callbackdate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="calldate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="callid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="callref" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customercode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="delv_add_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="CONV" syncable="YES">
+        <attribute name="currdes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currencycode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="exchangerate" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="symbol" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CUST" syncable="YES">
+        <attribute name="acc_ref" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addr1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addr2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addr3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addr4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addr5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="alternative_delv" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="area" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="batch_no" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="company" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="costmargin" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="credit_limit" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="curr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cusgroup" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cust_shortname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="delivery_address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="disdays" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="disgroup" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailaddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isaddedondevice" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isnew" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastinvoicedate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastorderdate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastyearsales" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mobileno" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="newdeliveryaddr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="older_bal" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pricegroup" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rep1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rep2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="setdis" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="stopflag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="t30days" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="t60days" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="t90days" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="terms" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="total_bal" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="ytd1" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="iheads" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="IHEAD" inverseName="customer" inverseEntity="IHEAD" syncable="YES"/>
+        <relationship name="oheads" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="OHEAD" inverseName="customer" inverseEntity="OHEAD" syncable="YES"/>
+    </entity>
+    <entity name="DOWNLOADHISTORY" syncable="YES">
+        <attribute name="filename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filesizeinkb" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="lastmodifiedon" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="EXTRAGROUPCODES" syncable="YES">
+        <attribute name="extragroupcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gdescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group_seq" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PROD" inverseName="extragroup" inverseEntity="PROD" syncable="YES"/>
+    </entity>
+    <entity name="GROUP1CODES" syncable="YES">
+        <attribute name="gdescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group_seq" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="group1code" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="group2" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="GROUP2CODES" inverseName="group1" inverseEntity="GROUP2CODES" syncable="YES"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PROD" inverseName="group1" inverseEntity="PROD" syncable="YES"/>
+    </entity>
+    <entity name="GROUP2CODES" syncable="YES">
+        <attribute name="gdescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group_seq" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="group2code" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="group1" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GROUP1CODES" inverseName="group2" inverseEntity="GROUP1CODES" syncable="YES"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PROD" inverseName="group2" inverseEntity="PROD" syncable="YES"/>
+    </entity>
+    <entity name="IHEAD" syncable="YES">
+        <attribute name="cust_ord_ref" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customer_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="delv_add_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="invoice_num" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="invoice_val" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="invoiced_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="customer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CUST" inverseName="iheads" inverseEntity="CUST" syncable="YES"/>
+        <relationship name="invoicelines" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ILINES" inverseName="invoicehead" inverseEntity="ILINES" syncable="YES"/>
+    </entity>
+    <entity name="ILINES" syncable="YES">
+        <attribute name="invoice_num" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price_invoiced" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="product_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sales_invoice_val" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="tot_invoiced_qty" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="invoicehead" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IHEAD" inverseName="invoicelines" inverseEntity="IHEAD" syncable="YES"/>
+        <relationship name="product" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PROD" inverseName="invoicelines" inverseEntity="PROD" syncable="YES"/>
+    </entity>
+    <entity name="NEWSEQUENCES" syncable="YES">
+        <attribute name="next_batch_no" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="next_customer_no" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="next_transaction_no" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rep_id" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="NOTES" syncable="YES">
+        <attribute name="notetext" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notetype" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="OHEAD" syncable="YES">
+        <attribute name="cust_order_ref" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customer_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="def_rep" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="del_add_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="delivery_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="order_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="order_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sales_ord_val_delv" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sales_ord_val_outst" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="customer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CUST" inverseName="oheads" inverseEntity="CUST" syncable="YES"/>
+        <relationship name="orderlines" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="OLINES" inverseName="orderhead" inverseEntity="OLINES" syncable="YES"/>
+    </entity>
+    <entity name="OHEADNEW" syncable="YES">
+        <attribute name="batch_no" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="company" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="creditemail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="curr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="custdisc" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="custname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customerid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deliveryaddressid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="discper" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailaddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailconfirm" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailrep" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="employeeid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="end_time" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="freetext" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="held_status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hold_newcust" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hold_proforma" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="invoice_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isopen" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="nextcall_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="order_status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderdate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="orderid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderrep" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ordertotal" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="ordertotalgross" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="ordsource" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="ordtime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="ordtype" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="payment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="payment_amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="payment_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="payment_note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="payment_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="printed" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="processed" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="purchaseordernumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quotelayoutid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="required_bydate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="scannerid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selpricerow" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="start_time" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="totalvat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="typeref" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="customer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CUST" syncable="YES"/>
+        <relationship name="orderlinesnew" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="OLINESNEW" inverseName="orderheadnew" inverseEntity="OLINESNEW" syncable="YES"/>
+    </entity>
+    <entity name="OLINES" syncable="YES">
+        <attribute name="line_no" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="outst_ord_qty" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="price_ordered" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="product_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="req_delv_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="tot_ord_qty" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="orderhead" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OHEAD" inverseName="orderlines" inverseEntity="OHEAD" syncable="YES"/>
+        <relationship name="product" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PROD" inverseName="orderlines" inverseEntity="PROD" syncable="YES"/>
+    </entity>
+    <entity name="OLINESNEW" syncable="YES">
+        <attribute name="barcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="baseprice" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="company" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="datesold" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deliveryaddresscode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="disc" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="expecteddate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="line_inner" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="line_outer" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="lineno" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linetext" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linetotal" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="orderid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderlinepricetype" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderlinetype" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderpacktype" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="priceband" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="requireddate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="saleprice" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unitprice" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="vatcode" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="vattotal" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="orderheadnew" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OHEADNEW" inverseName="orderlinesnew" inverseEntity="OHEADNEW" syncable="YES"/>
+        <relationship name="product" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PROD" syncable="YES"/>
+    </entity>
+    <entity name="PRICES" syncable="YES">
+        <attribute name="custcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="disc" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="prodcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="specprice" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="PROD" syncable="YES">
+        <attribute name="altrproductcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="anydisc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="barcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="buyer" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="colour" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="colour_desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="colour_desc2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comm_to_invoice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cost_price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="crq" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dueconsignments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="extracode1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="extracode2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="extracode3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fobcost" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fobcurrency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gdescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="grp2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inner" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="innerbarcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isimageavailable" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="itemsequence" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longdesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="on_sales_ords" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="outer" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="outerbarcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="palletqty" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="palletqty2" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="palletqty3" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="prcntlay" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="prd_carton_cbm" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="price1" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="price2" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="price3" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="price4" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="price5" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="price6" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="price7" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="price8" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="price9" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="priceband" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="prlaypall" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="prsize" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="qty_free" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="qty_onhand" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="qty1" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="qty2" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="qty3" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="resv_stock" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="searchdateandtime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sellunit" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stock_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stockavailability" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="totbo" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="vatcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="ytdsales" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="extragroup" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EXTRAGROUPCODES" inverseName="products" inverseEntity="EXTRAGROUPCODES" syncable="YES"/>
+        <relationship name="group1" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GROUP1CODES" inverseName="products" inverseEntity="GROUP1CODES" syncable="YES"/>
+        <relationship name="group2" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GROUP2CODES" inverseName="products" inverseEntity="GROUP2CODES" syncable="YES"/>
+        <relationship name="invoicelines" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ILINES" inverseName="product" inverseEntity="ILINES" syncable="YES"/>
+        <relationship name="orderlines" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OLINES" inverseName="product" inverseEntity="OLINES" syncable="YES"/>
+        <relationship name="porders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PURCHASEORDERS" inverseName="product" inverseEntity="PURCHASEORDERS" syncable="YES"/>
+    </entity>
+    <entity name="PURCHASEORDERS" syncable="YES">
+        <attribute name="availableqty" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="due_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="due_qty" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="po_no" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shipped" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="product" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PROD" inverseName="porders" inverseEntity="PROD" syncable="YES"/>
+    </entity>
+    <entity name="STOCKBAND" syncable="YES">
+        <attribute name="bandid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="campaign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="custband" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="disc" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="enddate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="prodband" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startdate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="TARGETS" syncable="YES">
+        <attribute name="account" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="apr" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="aug" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dec" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="feb" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="jan" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="jul" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="jun" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mar" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="may" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="nov" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="oct" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="productcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="repid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sep" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="totalvalue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BAR" positionX="126" positionY="135" width="128" height="90"/>
+        <element name="CALLLOGS" positionX="153" positionY="162" width="128" height="165"/>
+        <element name="CONV" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="CUST" positionX="-54" positionY="18" width="128" height="750"/>
+        <element name="DOWNLOADHISTORY" positionX="135" positionY="126" width="128" height="90"/>
+        <element name="EXTRAGROUPCODES" positionX="187" positionY="378" width="128" height="105"/>
+        <element name="GROUP1CODES" positionX="322" positionY="189" width="128" height="120"/>
+        <element name="GROUP2CODES" positionX="313" positionY="9" width="128" height="120"/>
+        <element name="IHEAD" positionX="27" positionY="171" width="128" height="165"/>
+        <element name="ILINES" positionX="36" positionY="180" width="128" height="150"/>
+        <element name="NEWSEQUENCES" positionX="162" positionY="153" width="128" height="105"/>
+        <element name="NOTES" positionX="126" positionY="135" width="128" height="75"/>
+        <element name="OHEAD" positionX="9" positionY="153" width="128" height="210"/>
+        <element name="OHEADNEW" positionX="144" positionY="135" width="128" height="795"/>
+        <element name="OLINES" positionX="18" positionY="162" width="128" height="180"/>
+        <element name="OLINESNEW" positionX="153" positionY="144" width="128" height="435"/>
+        <element name="PRICES" positionX="-36" positionY="153" width="128" height="105"/>
+        <element name="PROD" positionX="18" positionY="180" width="128" height="1050"/>
+        <element name="PURCHASEORDERS" positionX="-18" positionY="162" width="128" height="150"/>
+        <element name="STOCKBAND" positionX="0" positionY="171" width="128" height="195"/>
+        <element name="TARGETS" positionX="144" positionY="153" width="128" height="315"/>
+    </elements>
+</model>

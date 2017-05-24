@@ -1,0 +1,54 @@
+//
+//  mSeller-prefix.pch
+//  mSeller
+//
+//  Created by Satish Kr Singh on 09/09/15.
+//  Copyright (c) 2015 Williams Commerce Ltd. All rights reserved.
+//
+
+#ifndef mSeller_mSeller_prefix_pch
+#define mSeller_mSeller_prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+
+
+#ifndef Debug
+#define Debug 1
+#endif
+
+#if Debug
+#   define DebugLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#   define DebugLog(...)
+#endif
+
+
+
+//#ifndef TARGET_OS_IOS
+//#define TARGET_OS_IOS TARGET_OS_IPHONE
+//#endif
+
+//#ifndef TARGET_OS_WATCH
+//#define TARGET_OS_WATCH 0
+//#endif
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <Security/Security.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import <CoreLocation/CoreLocation.h>
+
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+#import "AppDelegate.h"
+#import "Constants.h"
+#import "CommonHelper.h"
+
+#endif

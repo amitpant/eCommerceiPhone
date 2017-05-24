@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wc_logo_small" translatesAutoresizingMaskIntoConstraints="NO" id="o25-XV-kXF">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="El4-Tz-uQQ"/>
+                        <constraint firstAttribute="width" constant="129" id="oEe-jz-JPo"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="El4-Tz-uQQ"/>
+                            <exclude reference="oEe-jz-JPo"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="El4-Tz-uQQ"/>
+                            <include reference="oEe-jz-JPo"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_login" translatesAutoresizingMaskIntoConstraints="NO" id="3mk-No-czd">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="5LZ-kI-QmT"/>
+                        <constraint firstAttribute="height" constant="82" id="9vn-bE-Qgb"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="5LZ-kI-QmT"/>
+                            <exclude reference="9vn-bE-Qgb"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="5LZ-kI-QmT"/>
+                            <include reference="9vn-bE-Qgb"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hh4-gD-M9e">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="3K6-aS-w0M">
+                    <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                </activityIndicatorView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="computoy_logo_small" translatesAutoresizingMaskIntoConstraints="NO" id="J7Y-Nk-sOA">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="tTH-zM-yrN"/>
+                        <constraint firstAttribute="width" constant="127" id="v5O-kv-R57"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="tTH-zM-yrN"/>
+                            <exclude reference="v5O-kv-R57"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="tTH-zM-yrN"/>
+                            <include reference="v5O-kv-R57"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3K6-aS-w0M" firstAttribute="centerX" secondItem="3mk-No-czd" secondAttribute="centerX" id="8Mf-lv-mYl"/>
+                <constraint firstItem="Hh4-gD-M9e" firstAttribute="leading" secondItem="J7Y-Nk-sOA" secondAttribute="leading" id="9tN-1a-aLz"/>
+                <constraint firstAttribute="bottom" secondItem="J7Y-Nk-sOA" secondAttribute="bottom" constant="5" id="GSL-zD-JzL"/>
+                <constraint firstItem="3mk-No-czd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Jzy-OW-LfK"/>
+                <constraint firstItem="Hh4-gD-M9e" firstAttribute="top" secondItem="3K6-aS-w0M" secondAttribute="bottom" constant="2" id="Ohx-OT-ghF"/>
+                <constraint firstItem="3mk-No-czd" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="OsO-Ag-etb">
+                    <variation key="widthClass=compact" constant="-58"/>
+                </constraint>
+                <constraint firstItem="J7Y-Nk-sOA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="UWO-tK-ncL"/>
+                <constraint firstItem="Hh4-gD-M9e" firstAttribute="trailing" secondItem="o25-XV-kXF" secondAttribute="trailing" id="bAG-ok-K7s"/>
+                <constraint firstAttribute="bottom" secondItem="o25-XV-kXF" secondAttribute="bottom" constant="25" id="gdZ-Pb-2eG"/>
+                <constraint firstAttribute="trailing" secondItem="o25-XV-kXF" secondAttribute="trailing" constant="5" id="obv-eU-zfG"/>
+                <constraint firstItem="3K6-aS-w0M" firstAttribute="top" secondItem="3mk-No-czd" secondAttribute="bottom" constant="13" id="zil-YX-vYg"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="o25-XV-kXF"/>
+                    <exclude reference="3mk-No-czd"/>
+                    <exclude reference="Hh4-gD-M9e"/>
+                    <exclude reference="3K6-aS-w0M"/>
+                    <exclude reference="J7Y-Nk-sOA"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="8Mf-lv-mYl"/>
+                    <exclude reference="zil-YX-vYg"/>
+                    <exclude reference="9tN-1a-aLz"/>
+                    <exclude reference="Ohx-OT-ghF"/>
+                    <exclude reference="bAG-ok-K7s"/>
+                    <exclude reference="Jzy-OW-LfK"/>
+                    <exclude reference="OsO-Ag-etb"/>
+                    <exclude reference="GSL-zD-JzL"/>
+                    <exclude reference="UWO-tK-ncL"/>
+                    <exclude reference="gdZ-Pb-2eG"/>
+                    <exclude reference="obv-eU-zfG"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="o25-XV-kXF"/>
+                    <include reference="3mk-No-czd"/>
+                    <include reference="Hh4-gD-M9e"/>
+                    <include reference="3K6-aS-w0M"/>
+                    <include reference="J7Y-Nk-sOA"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="8Mf-lv-mYl"/>
+                    <include reference="zil-YX-vYg"/>
+                    <include reference="9tN-1a-aLz"/>
+                    <include reference="Ohx-OT-ghF"/>
+                    <include reference="bAG-ok-K7s"/>
+                    <include reference="Jzy-OW-LfK"/>
+                    <include reference="OsO-Ag-etb"/>
+                    <include reference="GSL-zD-JzL"/>
+                    <include reference="UWO-tK-ncL"/>
+                    <include reference="gdZ-Pb-2eG"/>
+                    <include reference="obv-eU-zfG"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="computoy_logo_small" width="90" height="50"/>
+        <image name="logo_login" width="180" height="82"/>
+        <image name="wc_logo_small" width="129" height="30"/>
+    </resources>
+</document>
